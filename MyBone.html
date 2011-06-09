@@ -1,0 +1,28 @@
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>MyBone</title>
+  <script src="file:///Users/wei_lu/RailsCamp/JavascriptResource/jquery-1.5.1.min.js"></script>
+  <script src="file:///Users/wei_lu/RailsCamp/JavascriptResource/underscore.js"></script>
+  <script src="file:///Users/wei_lu/RailsCamp/JavascriptResource/backbone.js"></script>
+</head>
+
+<body id="mybone" onload="">
+  <label for="start_time">Start Time</label>
+  <input type="text" value="06:00" id="start_time">
+  <label for="finish_time">Finish Time</label>
+  <input type="text" value="" id="finish_time">
+  
+  
+</body>
+<script type="text/javascript" charset="utf-8">
+  var start_time = $("#start_time");
+  var finish_time = $("#finish_time");
+  var TimeCalculator = Backbone.Model.extend({
+    calculate: function(){
+      return this.get("start_time");
+    }
+  });
+  var time_cal = new TimeCalculator({start_time: "06:00", end_time: "07:00"})
+  var now = new Date(toda)
+  alert(now.getHours());
+</script>
